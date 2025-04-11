@@ -1,0 +1,2 @@
+This survey form is a certification project from freecodecamp built using HTML and CSS. 
+Two versions of the project are going to be made with one serving as the original project using just what I've learned so far and the other project version will include additional external resources that will enchance the project.

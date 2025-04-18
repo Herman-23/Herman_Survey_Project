@@ -8,19 +8,39 @@
 </head>
 <body>
     <h1 id="title">Herman's Original Survey Form</h1>
-    <p>Thanks for taking part in the survey to help me get to know the preferences of fellow developers! Whether you're a seasoned pro or just starting, I want to hear your thoughts on different types of tools, languages, and workflows.</p>
+    <p id="description">Thanks for taking part in the survey to help me get to know the preferences of fellow developers! Whether you're a seasoned pro or just starting, I want to hear your thoughts on different types of tools, languages, and workflows.</p>
 
     <form action="" id="survey-form">
-        <label for="name">Enter your name: 
-            <input type="text" id="name">
+        <div id="inline-to-block">
+        <label for="name" id="name-label">Enter your name: 
+            <input type="text" id="name" placeholder="name" required>
         </label>
-        <label for="name">Enter your email: 
-            <input type="email" id="email">
+        <label for="name" id="email-label">Enter your email: 
+            <input type="email" id="email" placeholder="email" required>
         </label>
-
+        <label for="number" id="number-label">Enter your age:
+            <input type="number" id="number" min="1" max="99" pattern="[0-9] {1,2}" placeholder="age" required >
+        </label>
+    </div>
+        <p>Here is a list of options to select from in regards to where you are in your learning journey:</p>
+        <select name="dropdown" id="dropdown">
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JS">JS</option>
+            <option value="Beyond-JS">Beyond JS</option>
+        </select>
+        
+        <label for="radios"> Do you prefer frontend or backend coding?</label>
+        <label for="option1">Frontend</label>
+        <input type="radio" id="frontend" name="language" value="Frontend">
+        <label for="option1">Backend</label>
+        <input type="radio" id="backend" name="language" value="Backend">
+        
+        <button id="submit" type="submit"> Submit </button>
     </form>
+
+    
     
 </body>
 </html>
 
-<!-- Continue on step 7 -->
